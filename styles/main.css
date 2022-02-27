@@ -1,0 +1,187 @@
+body {
+  background-color: #08010a;
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+}
+
+.yellow-blur {
+  position: absolute;
+  right: -5px;
+  width: 45%;
+  top: -120px;
+}
+
+.purple-blur {
+  position: absolute;
+  left: -130px;
+  width: 50%;
+  top: 170px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.star {
+  margin-top: 30px;
+}
+
+.hope {
+  font-size: 45px;
+  line-height: 61px;
+  background-image: linear-gradient(
+    rgba(255, 204, 250, 0.98) 30%,
+    #ebfdff 47.36%,
+    #b499ff 100%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  vertical-align: top;
+  font-family: "Alegreya", serif;
+  font-weight: 500;
+}
+
+.description {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0 300px;
+  text-align: center;
+  line-height: 41px;
+}
+
+.cylinder-container {
+  position: relative;
+}
+
+.learn-more {
+  position: absolute;
+  top: 200px;
+  left: 190px;
+  letter-spacing: 0.03rem;
+}
+
+.learn-more a button {
+  padding: 14px 80px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-family: "Alegreya", serif;
+  cursor: pointer;
+  background-color: #07020e;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.learn-more a button:hover {
+  background-color: #272727;
+}
+
+.socials {
+  display: flex;
+  position: absolute;
+  top: 330px;
+  left: 240px;
+}
+
+.fa-brands {
+  color: #fff;
+  font-size: 40px;
+}
+
+.twitter {
+  margin-right: 70px;
+}
+
+@media screen and (max-width: 1049px) {
+  .description {
+    margin: 0 200px;
+  }
+  .purple-blur {
+    top: 400px;
+  }
+}
+
+@media screen and (max-width: 747px) {
+  .description {
+    margin: 0 100px;
+  }
+  .purple-blur {
+    top: 400px;
+    left: -90px;
+  }
+  .yellow-blur {
+    top: -70px;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  .svg {
+    width: 70%;
+    margin-left: 40px;
+  }
+  .learn-more {
+    left: 130px;
+    top: 80px;
+  }
+  .learn-more a button {
+    padding: 14px 40px;
+  }
+  .fa-brands {
+    font-size: 30px;
+  }
+  .socials {
+    left: 150px;
+    top: 170px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .description {
+    margin: 0 15px;
+  }
+  .purple-blur {
+    top: 500px;
+    left: -60px;
+  }
+  .yellow-blur {
+    top: -50px;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  .socials {
+    left: 110px;
+  }
+  .learn-more {
+    left: 98px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .svg {
+    visibility: hidden;
+  }
+  .learn-more,
+  .socials {
+    left: 20%;
+  }
+  .socials {
+    margin-top: 20px;
+  }
+  .twitter {
+    margin-right: 95px;
+  }
+}
