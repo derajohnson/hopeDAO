@@ -138,6 +138,12 @@ body {
   .socials {
     right: 41%;
   }
+  body {
+    overflow-y: visible;
+  }
+  .cylinder-section {
+    
+  }
 }
 
 @media screen and (max-width: 769px) {
