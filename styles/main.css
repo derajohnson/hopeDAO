@@ -2,6 +2,7 @@ body {
   background-color: #08010a;
   color: #fff;
   margin: 0;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -49,6 +50,7 @@ body {
   vertical-align: top;
   font-family: "Alegreya", serif;
   font-weight: 500;
+  margin: 20px 0;
 }
 
 .description {
@@ -66,8 +68,8 @@ body {
 
 .learn-more {
   position: absolute;
-  top: 200px;
-  left: 190px;
+  top: 120px;
+  right: 40%;
   letter-spacing: 0.03rem;
 }
 
@@ -92,8 +94,8 @@ body {
 .socials {
   display: flex;
   position: absolute;
-  top: 330px;
-  left: 240px;
+  top: 230px;
+  right: 44%;
 }
 
 .fa-brands {
@@ -105,6 +107,24 @@ body {
   margin-right: 70px;
 }
 
+.cylinder-section {
+  background-image: url(/assets/cylinder.svg);
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+@media screen and (max-width: 1113px) {
+  .learn-more {
+    right: 38%;
+  }
+  .socials {
+    right: 43%;
+  }
+}
+
 @media screen and (max-width: 1049px) {
   .description {
     margin: 0 200px;
@@ -112,11 +132,20 @@ body {
   .purple-blur {
     top: 400px;
   }
+  .learn-more {
+    right: 36%;
+  }
+  .socials {
+    right: 41%;
+  }
 }
 
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 769px) {
   .description {
     margin: 0 100px;
+  }
+  .learn-more {
+    right: 32%;
   }
   .purple-blur {
     top: 400px;
@@ -125,26 +154,23 @@ body {
   .yellow-blur {
     top: -70px;
   }
+  .socials {
+    right: 38%;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .learn-more {
+    right: 29%;
+  }
 }
 
 @media screen and (max-width: 506px) {
-  .svg {
-    width: 70%;
-    margin-left: 40px;
-  }
-  .learn-more {
-    left: 130px;
-    top: 80px;
-  }
-  .learn-more a button {
-    padding: 14px 40px;
-  }
   .fa-brands {
     font-size: 30px;
   }
-  .socials {
-    left: 150px;
-    top: 170px;
+  .description {
+    font-size: 18px;
   }
 }
 
@@ -159,29 +185,31 @@ body {
   .yellow-blur {
     top: -50px;
   }
+  .learn-more {
+    right: 24%;
+  }
+  .socials {
+    right: 38%;
+  }
 }
 
-@media screen and (max-width: 423px) {
-  .socials {
-    left: 110px;
-  }
+@media screen and (max-width: 430px) {
   .learn-more {
-    left: 98px;
+    right: 18%;
+  }
+  .socials {
+    right: 34%;
   }
 }
 
 @media screen and (max-width: 393px) {
-  .svg {
-    visibility: hidden;
-  }
-  .learn-more,
-  .socials {
-    left: 20%;
-  }
-  .socials {
-    margin-top: 20px;
-  }
   .twitter {
     margin-right: 95px;
+  }
+  .learn-more {
+    right: 12%;
+  }
+  .socials {
+    right: 25%;
   }
 }
